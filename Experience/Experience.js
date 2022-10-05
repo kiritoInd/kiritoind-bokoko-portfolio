@@ -8,7 +8,7 @@ import Theme from "./Theme"
 import Renderer from "./Renderer.js"
 import Preloader from "./Preloader.js"
 
-import World from "./World/World.js";
+import World from "./world/World.js";
 import controls from "./World/Controls";
 
 export default class Experience {
