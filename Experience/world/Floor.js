@@ -20,11 +20,11 @@ export default class Floor {
         this.circlefirst = new THREE.Mesh(geometry, material4);
         this.circlesecond = new THREE.Mesh(geometry, material5);
         this.circlethird = new THREE.Mesh(geometry, material6);
-        this.circlefirst.position.y = -0.32
+        this.circlefirst.position.y = -0.12
         this.circlefirst.position.x = 0.2
-        this.circlesecond.position.y = -0.31
+        this.circlesecond.position.y = -0.11
         this.circlesecond.position.x = 1.5
-        this.circlethird.position.y = -0.30
+        this.circlethird.position.y = -0.10
 
 
         this.circlefirst.scale.set(0, 0, 0,)

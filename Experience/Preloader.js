@@ -56,7 +56,7 @@ export default class Preloader extends EventEmitter {
                     duration: 0.7,
 
                 }).to(this.room.position, {
-                    x: -1,
+                    x: -0.8,
                     ease: 'power1.out',
                     duration: 0.7,
 
@@ -252,6 +252,7 @@ export default class Preloader extends EventEmitter {
     }
 
     async playIntro() {
+        this.scaleFlag = true;
         await this.firstIntro();
         this.moveFlag = true;
         this.scrollOnceEvent = this.onScroll.bind(this)
@@ -263,17 +264,25 @@ export default class Preloader extends EventEmitter {
     }
     async playSecondIntro() {
         this.moveFlag = false;
-        this.scaleflag = true;
+        
         await this.secondIntro();
-        this.scaleflag = false;
-        if (this.device === "mobile") {
-            this.emit("enablecontrols")
-        }
+        this.scaleFlag = false;
+        this.mobile();
+        this.emit("enablecontrols")
+        
 
     }
+    mobile(){
+        if(this.device === "mobile"){
+        this.emit("enablecontrols")
+        console.log("mobile")
+        }
+    }
+
     move() {
         if (this.device === "desktop") {
-            this.room.position.set(-1, 0, 0);
+            this.room.position.set(-0.8, 0, 0);
+            
         } else {
             this.room.position.set(0, 0, -0.5);
         }

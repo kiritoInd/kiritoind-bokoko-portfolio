@@ -9,7 +9,7 @@ import Renderer from "./Renderer.js"
 import Preloader from "./Preloader.js"
 
 import World from "./world/World.js";
-import controls from "./World/Controls";
+import Controls from "./World/Controls.js";
 
 export default class Experience {
     static instance;
@@ -30,12 +30,12 @@ export default class Experience {
         this.world = new World();
         this.preloader = new Preloader();
         this.preloader.on("enablecontrols", () => {
-            console.log("constols")
-            // this.Controls = new controls();
-
+            console.log("ena")
+            this.Controls = new Controls();
+           
         }
 
-        )
+        );
         this.sizes.on("resize", () => {
 
             this.resize();
@@ -49,8 +49,8 @@ export default class Experience {
 
     resize() {
         this.camera.resize()
-        this.renderer.resize();
         this.world.resize();
+        this.renderer.resize();
 
 
     }
@@ -58,9 +58,11 @@ export default class Experience {
         this.preloader.update();
         this.camera.update();
 
-        this.renderer.update();
         this.world.update();
-
+        this.renderer.update();
+        if (this.controls) {
+            this.controls.update();
+        }
     }
 
 }

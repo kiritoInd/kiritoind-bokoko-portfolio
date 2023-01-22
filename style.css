@@ -6,8 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
 }
 
 /* EXPERIENCE */
@@ -16,14 +14,9 @@ body {
   font-family: 'poppins', sans-serif;
   letter-spacing: 1.4px;
 
-
   /* color: var(--text-black); */
 }
 
-/* 
-body {
-  overflow: hidden;
-} */
 
 
 h1,
@@ -100,18 +93,18 @@ svg {
 .loading {
   display: flex;
   position: fixed;
+  
   top: 50%;
-  left: 45%;
-
+  right: 48%;
   justify-content: center;
   align-items: center;
 }
 
 .circle {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 
-  margin: 6px;
+  margin: 5px;
   border-radius: 50%;
   background-color: var(--color-blue-light);
   animation: load 1s ease-in-out infinite;
@@ -147,11 +140,14 @@ svg {
   z-index: 9999999999999999999999;
   width: 100%;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
+
 }
 
 .page-wrapper {
   position: relative;
+
+  width: 100%;
 
 }
 
@@ -164,9 +160,10 @@ svg {
 .intro-text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left:54%;
   font-weight: 500;
-  font-size: 16px;
+  /* letter-spacing: px; */
+  font-size: 18px;
   color: var(--color-text);
 
   transform: translate(-50%, -50%);
@@ -272,6 +269,14 @@ svg {
 
 
 }
+
+/* 
+html,
+body {
+  overflow: hidden;
+  position: relative;
+  z-index: 99999999999999999999;
+} */
 
 .right {
   margin-left: auto;
@@ -469,11 +474,11 @@ svg {
 /* media query */
 .page {
 
-  /* z-index: 9999999999999999999999; */
+  z-index: 9999999999999999999999;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .hidden {
@@ -489,14 +494,37 @@ svg {
     max-width: 100%;
   }
 
+  .char-main-description {
+    display: flex
+  }
+
   .intro-text {
     width: 300px;
     text-align: center;
   }
+  .loading{
+
+    display: flex;
+    position: absolute;
+    
+    top: 50%;
+    right: 39%;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
+@media(max-width:748px){
+
+  .arrowSVGwrapper {
+  left: 47%;
+  }
+}
+
 
 
 a {
   text-decoration: none;
   color: #7bddb5;
 }
+
