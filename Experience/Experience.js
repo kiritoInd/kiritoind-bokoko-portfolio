@@ -9,7 +9,7 @@ import Renderer from "./Renderer.js"
 import Preloader from "./Preloader.js"
 
 import World from "./world/World.js";
-import Controls from "./World/Controls.js";
+import Controls from "./world/Controls.js";
 
 export default class Experience {
     static instance;
