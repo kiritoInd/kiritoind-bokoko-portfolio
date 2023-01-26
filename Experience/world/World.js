@@ -15,7 +15,6 @@ export default class World extends EventEmitter {
         this.experience = new Experience();
         this.sizes = this.experience.sizes;
         this.scene = this.experience.scene;
-        this.time = this.experience.time;
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
 
