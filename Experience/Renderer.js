@@ -1,6 +1,6 @@
 import Experience from "./Experience.js";
 import * as THREE from "three";
-export default class camera {
+export default class Renderer {
     constructor() {
         this.experience = new Experience();
         this.sizes = this.experience.sizes;
