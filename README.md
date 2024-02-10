@@ -33,7 +33,6 @@ This project is a showcase of my work and skills in a 3D environment. It leverag
 ## Dependencies
 
 - [Three.js](https://threejs.org/)
-- [Other dependencies, if any]
 
 ## Acknowledgments
 
