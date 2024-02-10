@@ -14,6 +14,13 @@ This is a 3D portfolio website created using Three.js. The project is inspired b
 
 [Link to Your Portfolio Website](https://kiritoind-bokoko-portfolio.vercel.app/)
 
+## Preview
+**1**
+![Images](./public/textures/pv1.png)
+
+**2**
+![Images](./public/textures/pv2.png)
+
 ## Description
 
 This project is a showcase of my work and skills in a 3D environment. It leverages the power of Three.js to create an interactive and visually appealing portfolio experience.
