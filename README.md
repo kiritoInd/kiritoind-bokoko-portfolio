@@ -12,7 +12,7 @@ This is a 3D portfolio website created using Three.js. The project is inspired b
 
 ## Portfolio Website
 
-[Link to Your Portfolio Website](https://kiritoind-bokoko-portfolio.vercel.app/)
+[Portfolio Website](https://kiritoind-bokoko-portfolio.vercel.app/)
 
 ## Preview
 **1**
@@ -28,7 +28,8 @@ This project is a showcase of my work and skills in a 3D environment. It leverag
 ## How to Run
 
 1. Clone the repository.
-2. Open the `index.html` file in a web browser.
+2. run ` npm install `
+3. run ` npm run dev `
 
 ## Dependencies
 
