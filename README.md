@@ -5,10 +5,10 @@ This is a 3D portfolio website created using Three.js. The project is inspired b
 ## Credits
 
 - **Andrew Woan**
-  - [Andrew Woan's Portfolio](https://github.com/andrewwoan)
+  - [Andrew Woan's Github](https://github.com/andrewwoan)
 
 - **Bokoko**
-  - [Bokoko's GitHub](https://bokoko33.me/)
+  - [Bokoko's Portfolio](https://bokoko33.me/)
 
 ## Portfolio Website
 
